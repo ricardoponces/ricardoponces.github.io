@@ -5,11 +5,48 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ricardo Ponce $oto | $enior IT Consultant & $ervice Architecture</title>
+  <title>Ricardo Ponce Soto | Senior IT Consultant & Service Architecture</title>
   <meta name="description"
         content="Senior IT Consultant with 20+ years of experience in service architecture, platform design, automation, governance and social technology initiatives.">
   <meta name="keywords"
         content="IT Consulting, Service Architecture, Platform Architecture, Automation, IT Governance, DevOps">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ricardoponces.github.io/">
+  <meta property="og:title" content="Ricardo Ponce Soto | Senior IT Consultant">
+  <meta property="og:description" content="Senior IT Consultant with 20+ years of experience in service architecture, platform design, automation, governance and social technology initiatives.">
+  <meta property="og:image" content="https://ricardoponces.github.io/assets/img/me.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ricardoponces.github.io/">
+  <meta property="twitter:title" content="Ricardo Ponce Soto | Senior IT Consultant">
+  <meta property="twitter:description" content="Senior IT Consultant with 20+ years of experience in service architecture, platform design, automation, governance and social technology initiatives.">
+  <meta property="twitter:image" content="https://ricardoponces.github.io/assets/img/me.jpg">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ricardo Ponce Soto",
+    "jobTitle": "Senior IT Consultant",
+    "description": "Senior IT Consultant with 20+ years of experience in service architecture, platform design, automation, governance and social technology initiatives.",
+    "url": "https://ricardoponces.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/ricardo-ponce-soto-47590951/",
+      "https://x.com/Wirilais",
+      "https://web.facebook.com/Wiril",
+      "https://buymeacoffee.com/ricardoponces"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Viña del Mar",
+      "addressCountry": "CL"
+    }
+  }
+  </script>
 
   <link href="assets/img/favicon.png" rel="icon">
 
@@ -26,30 +63,44 @@
 
 <body>
 
+<!-- ================= LANGUAGE TOGGLE ================= -->
+<div id="lang-toggle" class="lang-toggle" title="Cambiar idioma / Switch language">
+  <span id="lang-flag" class="lang-flag">🇬🇧</span>
+</div>
+
 <!-- ================= HEADER ================= -->
 <header id="header">
   <div class="container">
 
     <h1><a href="#">Ricardo Ponce</a></h1>
     <h2>
-      Senior <span>IT Consultant</span><br>
-      Service Architecture · Platforms · IT Governance
+      <span data-i18n="header_title">Senior</span> <span>IT Consultant</span><br>
+      <span data-i18n="header_subtitle">Service Architecture · Platforms · IT Governance</span>
     </h2>
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link active" href="#header">Home</a></li>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#experience">Experience</a></li>
-        <li><a class="nav-link" href="#focus">Focus</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="nav-link active" href="#header" data-i18n="nav_home">Home</a></li>
+        <li><a class="nav-link" href="#about" data-i18n="nav_about">About</a></li>
+        <li><a class="nav-link" href="#experience" data-i18n="nav_experience">Experience</a></li>
+        <li><a class="nav-link" href="#focus" data-i18n="nav_focus">Focus</a></li>
+        <li><a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
 
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/ricardo-ponce-soto-47590951/" class="linkedin">
+      <a href="https://www.linkedin.com/in/ricardo-ponce-soto-47590951/" class="linkedin" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://x.com/Wirilais" class="twitter" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+      <a href="https://web.facebook.com/Wiril" class="facebook" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://buymeacoffee.com/ricardoponces" class="coffee" target="_blank" rel="noopener noreferrer" title="Buy me a coffee">
+        <i class="bi bi-cup-hot-fill"></i>
       </a>
     </div>
 
@@ -61,8 +112,8 @@
   <div class="container">
 
     <div class="section-title">
-      <h2>About</h2>
-      <p>Professional Overview</p>
+      <h2 data-i18n="about_title">About</h2>
+      <p data-i18n="about_subtitle">Professional Overview</p>
     </div>
 
     <div class="row">
@@ -71,26 +122,26 @@
       </div>
 
       <div class="col-lg-8 pt-4 pt-lg-0 content">
-        <h3>Senior IT Consultant · Service & Platform Architecture</h3>
+        <h3 data-i18n="about_heading">Senior IT Consultant · Service & Platform Architecture</h3>
 
-        <p>
+        <p data-i18n="about_p1">
           Senior IT consultant with more than 20 years of experience designing, structuring and evolving
           technology services and platforms in complex and heterogeneous environments.
         </p>
 
-        <p>
+        <p data-i18n="about_p2">
           My work focuses on translating business needs into concrete, scalable and governable
           technology decisions, participating from early-stage analysis and business shadowing through
           solution design, service modeling and operational transition.
         </p>
 
-        <p>
+        <p data-i18n="about_p3">
           I have operated across multiple industries, assuming responsibility for service models,
           platform standardization, automation initiatives, observability, security by design and IT
           governance, with measurable impact on efficiency, continuity and operational clarity.
         </p>
 
-        <p>
+        <p data-i18n="about_p4">
           My technical background supports architectural judgment and decision-making rather than
           isolated execution, leaving behind structured models, automation and internal capability
           instead of dependency.
@@ -106,50 +157,50 @@
   <div class="container">
 
     <div class="section-title">
-      <h2>Experience</h2>
-      <p>Professional Trajectory</p>
+      <h2 data-i18n="experience_title">Experience</h2>
+      <p data-i18n="experience_subtitle">Professional Trajectory</p>
     </div>
 
     <div class="resume-item">
-      <h4>Senior IT Consultant</h4>
+      <h4 data-i18n="exp1_title">Senior IT Consultant</h4>
       <h5>2021 – Present</h5>
-      <p><em>Independent / Consulting Engagements</em></p>
+      <p><em data-i18n="exp1_company">Independent / Consulting Engagements</em></p>
       <ul>
-        <li>Design of service and platform architectures in organizations with low and medium IT maturity.</li>
-        <li>Business shadowing and documentation of fragmented, undocumented operational processes.</li>
-        <li>Design of automated endpoint provisioning and configuration platforms.</li>
-        <li>Reduction of provisioning times from manual processes to fully automated workflows.</li>
-        <li>Architecture of centralized observability and monitoring platforms.</li>
-        <li>Redesign of service management models, metrics and ticketing structures.</li>
-        <li>Organizational enablement through documentation, training platforms and knowledge transfer.</li>
-        <li>Design of automation and IoT-based solutions in constrained-budget environments.</li>
+        <li data-i18n="exp1_li1">Design of service and platform architectures in organizations with low and medium IT maturity.</li>
+        <li data-i18n="exp1_li2">Business shadowing and documentation of fragmented, undocumented operational processes.</li>
+        <li data-i18n="exp1_li3">Design of automated endpoint provisioning and configuration platforms.</li>
+        <li data-i18n="exp1_li4">Reduction of provisioning times from manual processes to fully automated workflows.</li>
+        <li data-i18n="exp1_li5">Architecture of centralized observability and monitoring platforms.</li>
+        <li data-i18n="exp1_li6">Redesign of service management models, metrics and ticketing structures.</li>
+        <li data-i18n="exp1_li7">Organizational enablement through documentation, training platforms and knowledge transfer.</li>
+        <li data-i18n="exp1_li8">Design of automation and IoT-based solutions in constrained-budget environments.</li>
       </ul>
     </div>
 
     <div class="resume-item">
-      <h4>IT Operations Engineer / Service Design & Transition</h4>
+      <h4 data-i18n="exp2_title">IT Operations Engineer / Service Design & Transition</h4>
       <h5>2012 – 2019</h5>
-      <p><em>Enterprise Consulting Environment</em></p>
+      <p><em data-i18n="exp2_company">Enterprise Consulting Environment</em></p>
       <ul>
-        <li>Participation in long-term service transformation initiatives.</li>
-        <li>Business shadowing and end-to-end process analysis.</li>
-        <li>Construction of service, process and dependency matrices.</li>
-        <li>Design of service models and preparation of operational transitions.</li>
-        <li>Definition of KPIs, metrics and governance structures.</li>
-        <li>Responsibility as technical counterpart for specific business domains.</li>
+        <li data-i18n="exp2_li1">Participation in long-term service transformation initiatives.</li>
+        <li data-i18n="exp2_li2">Business shadowing and end-to-end process analysis.</li>
+        <li data-i18n="exp2_li3">Construction of service, process and dependency matrices.</li>
+        <li data-i18n="exp2_li4">Design of service models and preparation of operational transitions.</li>
+        <li data-i18n="exp2_li5">Definition of KPIs, metrics and governance structures.</li>
+        <li data-i18n="exp2_li6">Responsibility as technical counterpart for specific business domains.</li>
       </ul>
     </div>
 
     <div class="resume-item">
-      <h4>Infrastructure & Platform Administrator</h4>
+      <h4 data-i18n="exp3_title">Infrastructure & Platform Administrator</h4>
       <h5>2008 – 2012</h5>
-      <p><em>Critical Operational Environments</em></p>
+      <p><em data-i18n="exp3_company">Critical Operational Environments</em></p>
       <ul>
-        <li>Design and administration of IT infrastructure.</li>
-        <li>Definition of continuity mechanisms (RTO, RPO, high availability).</li>
-        <li>Active Directory governance and configuration management.</li>
-        <li>Budget planning and operational support.</li>
-        <li>System deployments, QA, documentation and user training.</li>
+        <li data-i18n="exp3_li1">Design and administration of IT infrastructure.</li>
+        <li data-i18n="exp3_li2">Definition of continuity mechanisms (RTO, RPO, high availability).</li>
+        <li data-i18n="exp3_li3">Active Directory governance and configuration management.</li>
+        <li data-i18n="exp3_li4">Budget planning and operational support.</li>
+        <li data-i18n="exp3_li5">System deployments, QA, documentation and user training.</li>
       </ul>
     </div>
 
@@ -161,7 +212,7 @@
   <div class="container">
 
     <div class="section-title">
-      <h2>Focus Areas</h2>
+      <h2 data-i18n="focus_title">Focus Areas</h2>
     </div>
 
     <div class="row">
@@ -169,8 +220,8 @@
       <div class="col-lg-3">
         <div class="icon-box">
           <i class="bi bi-diagram-3"></i>
-          <h4>Service Architecture</h4>
-          <p>
+          <h4 data-i18n="focus1_title">Service Architecture</h4>
+          <p data-i18n="focus1_desc">
             Design of scalable and governable service models aligned with real business
             and operational context.
           </p>
@@ -180,8 +231,8 @@
       <div class="col-lg-3">
         <div class="icon-box">
           <i class="bi bi-cloud"></i>
-          <h4>Platform & Automation</h4>
-          <p>
+          <h4 data-i18n="focus2_title">Platform & Automation</h4>
+          <p data-i18n="focus2_desc">
             Platform standardization, automation, observability and security by design
             to reduce operational friction and risk.
           </p>
@@ -191,8 +242,8 @@
       <div class="col-lg-3">
         <div class="icon-box">
           <i class="bi bi-shield-check"></i>
-          <h4>IT Governance</h4>
-          <p>
+          <h4 data-i18n="focus3_title">IT Governance</h4>
+          <p data-i18n="focus3_desc">
             Service governance, metrics, transitions and sustainable improvement in
             complex environments.
           </p>
@@ -202,8 +253,8 @@
       <div class="col-lg-3">
         <div class="icon-box">
           <i class="bi bi-people"></i>
-          <h4>Social & Community Technology</h4>
-          <p>
+          <h4 data-i18n="focus4_title">Social & Community Technology</h4>
+          <p data-i18n="focus4_desc">
             Design of efficient, low-cost technology solutions for communities without
             access to resources, including support for structuring and leveraging
             external funding. These initiatives operate as reciprocal laboratories,
@@ -222,8 +273,8 @@
   <div class="container">
 
     <div class="section-title">
-      <h2>Contact</h2>
-      <p>Get in touch</p>
+      <h2 data-i18n="contact_title">Contact</h2>
+      <p data-i18n="contact_subtitle">Get in touch</p>
     </div>
 
     <div class="row">
@@ -231,15 +282,15 @@
       <div class="col-lg-4">
         <div class="info-box">
           <i class="bx bx-map"></i>
-          <h3>Address</h3>
-          <p>255.255.255.255</p>
+          <h3 data-i18n="contact_address">Address</h3>
+          <p>127.0.0.1</p>
         </div>
       </div>
 
       <div class="col-lg-4">
         <div class="info-box">
           <i class="bx bx-envelope"></i>
-          <h3>Email</h3>
+          <h3 data-i18n="contact_email">Email</h3>
           <p>ricardoponces@gmail.com</p>
         </div>
       </div>
@@ -247,8 +298,8 @@
       <div class="col-lg-4">
         <div class="info-box">
           <i class="bx bx-share-alt"></i>
-          <h3>LinkedIn</h3>
-          <p>linkedin.com/in/ricardo-ponce-soto-47590951</p>
+          <h3 data-i18n="contact_social">Social</h3>
+          <p><a href="https://buymeacoffee.com/ricardoponces" target="_blank" rel="noopener noreferrer">Buy me a coffee</a></p>
         </div>
       </div>
 

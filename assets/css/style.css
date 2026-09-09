@@ -1028,3 +1028,84 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+/*--------------------------------------------------------------
+# Language Toggle Button
+--------------------------------------------------------------*/
+.lang-toggle {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: rgba(24, 210, 110, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 99999;
+  box-shadow: 0 4px 15px rgba(24, 210, 110, 0.4);
+  transition: all 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background: rgba(53, 232, 136, 1);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(24, 210, 110, 0.6);
+}
+
+.lang-flag {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.lang-toggle:hover .lang-flag {
+  transform: rotate(15deg);
+}
+
+@media (max-width: 992px) {
+  .lang-toggle {
+    bottom: 70px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+  }
+  .lang-flag {
+    font-size: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Social Links Enhanced
+--------------------------------------------------------------*/
+.social-links a {
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+.social-links .twitter {
+  background: rgba(29, 161, 242, 0.2);
+}
+
+.social-links .twitter:hover {
+  background: rgba(29, 161, 242, 0.9);
+}
+
+.social-links .facebook {
+  background: rgba(66, 103, 178, 0.2);
+}
+
+.social-links .facebook:hover {
+  background: rgba(66, 103, 178, 0.9);
+}
+
+.social-links .coffee {
+  background: rgba(255, 221, 0, 0.2);
+}
+
+.social-links .coffee:hover {
+  background: rgba(255, 221, 0, 0.9);
+}
