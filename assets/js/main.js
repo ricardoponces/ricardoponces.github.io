@@ -112,7 +112,7 @@
   });
 
   let skilsContent = select('.skills-content');
-  if (skilsContent) {
+  if (skilsContent && typeof Waypoint !== 'undefined') {
     new Waypoint({
       element: skilsContent,
       offset: '80%',
