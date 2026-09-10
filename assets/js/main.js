@@ -128,7 +128,7 @@
   /* ============================================================
      LANGUAGE SYSTEM (English / Spanish)
      ============================================================ */
-  const translations = {
+  var translations = {
     en: {
       header_title: "Senior",
       header_subtitle: "Service Architecture · Platforms · IT Governance",
@@ -247,18 +247,26 @@
 
   function setLanguage(lang) {
     localStorage.setItem('lang', lang);
-    const flag = document.getElementById('lang-flag');
+    var flag = document.getElementById('lang-flag');
     if (flag) {
       flag.textContent = lang === 'en' ? '\u{1F1EC}\u{1F1E7}' : '\u{1F1EA}\u{1F1F8}';
     }
-    document.querySelectorAll('[data-i18n]').forEach(function(el) {
-      const key = el.getAttribute('data-i18n');
+    var elements = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elements.length; i++) {
+      var el = elements[i];
+      var key = el.getAttribute('data-i18n');
       if (translations[lang] && translations[lang][key]) {
         el.textContent = translations[lang][key];
       }
-    });
+    }
     document.documentElement.lang = lang;
   }
+
+  window.__toggleLang = function() {
+    var current = localStorage.getItem('lang') || 'en';
+    var next = current === 'en' ? 'es' : 'en';
+    setLanguage(next);
+  };
 
   window.addEventListener('DOMContentLoaded', function() {
     var savedLang = localStorage.getItem('lang') || 'en';
@@ -266,10 +274,9 @@
 
     var langBtn = document.getElementById('lang-toggle');
     if (langBtn) {
-      langBtn.addEventListener('click', function() {
-        var current = localStorage.getItem('lang') || 'en';
-        var next = current === 'en' ? 'es' : 'en';
-        setLanguage(next);
+      langBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        window.__toggleLang();
       });
     }
   });

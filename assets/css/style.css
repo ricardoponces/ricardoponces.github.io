@@ -1012,7 +1012,7 @@ section .container {
   text-align: right;
   font-size: 13px;
   color: #fff;
-  z-index: 999999;
+  z-index: 9999;
 }
 @media (max-width: 992px) {
   .credits {
@@ -1043,9 +1043,10 @@ section .container {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 99999;
+  z-index: 999999;
   box-shadow: 0 4px 15px rgba(24, 210, 110, 0.4);
   transition: all 0.3s ease;
+  user-select: none;
 }
 
 .lang-toggle:hover {
@@ -1076,36 +1077,20 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Social Links Enhanced
+# Social Links Colors
 --------------------------------------------------------------*/
-.social-links a {
-  transition: all 0.3s ease;
+#header .social-links .linkedin:hover {
+  background: rgba(0, 119, 181, 0.9);
 }
 
-.social-links a:hover {
-  transform: translateY(-3px);
+#header .social-links .twitter:hover {
+  background: rgba(0, 0, 0, 0.9);
 }
 
-.social-links .twitter {
-  background: rgba(29, 161, 242, 0.2);
-}
-
-.social-links .twitter:hover {
-  background: rgba(29, 161, 242, 0.9);
-}
-
-.social-links .facebook {
-  background: rgba(66, 103, 178, 0.2);
-}
-
-.social-links .facebook:hover {
+#header .social-links .facebook:hover {
   background: rgba(66, 103, 178, 0.9);
 }
 
-.social-links .coffee {
-  background: rgba(255, 221, 0, 0.2);
-}
-
-.social-links .coffee:hover {
+#header .social-links .coffee:hover {
   background: rgba(255, 221, 0, 0.9);
 }
